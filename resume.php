@@ -19,9 +19,11 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="manifest.json">
+		<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
         <meta name="msapplication-TileColor" content="#f5f5f5">
         <meta name="theme-color" content="#f5f5f5">
+		<link rel="manifest" href="manifest.json">
+		<script src="app.js"></script>
         <!-- Stylesheets and Fonts -->
         <link rel="preload" href="views/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="views/css/style.css"></noscript>
