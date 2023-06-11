@@ -1,8 +1,25 @@
 /* Global styles */
 
-/* Disable text selection */
+/* Body/HTML styles */
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: Lora, serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	background-color: #fff;
+}
+
+/* Body styles */
 body {
-    -webkit-user-select: none; /* Safari */
+	color: #333332;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.4;
+	text-align: center;
+	/* Disable text selection */
+	-webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE 10+ */
     user-select: none;
@@ -16,30 +33,6 @@ input, textarea {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none;
-}
-
-/* Body/HTML styles */
-body, html {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background-color: white;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-/* Body styles */
-body {
-	-webkit-font-smoothing: antialiased;
-	color: #333332;
-	font-family: Lora, serif;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 1.4;
-	text-rendering: optimizeLegibility;
-	text-align: center;
 }
 
 /* Wrapper div styles */

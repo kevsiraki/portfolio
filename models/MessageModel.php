@@ -81,7 +81,7 @@ class MessageModel
         if ($stmt->execute()) {
             return mysqli_insert_id($this->link);
         } else {
-            throw new Exception("Failed to save the message.");
+            throw new Exception("Not Sent");
         }
     }
 

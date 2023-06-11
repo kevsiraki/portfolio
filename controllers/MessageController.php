@@ -45,7 +45,7 @@ class MessageController
                     http_response_code(403);
                     $response = [
                         "status" => "error",
-                        "message" => "Too many spam messages.",
+                        "message" => "Too Many Messages",
                     ];
                 } else {
                     // If less than 10 messages sent from IP, save their message.
@@ -53,13 +53,13 @@ class MessageController
                     http_response_code(201);
                     $response = [
                         "status" => "success",
-                        "message" => "Message saved successfully.",
+                        "message" => "Message Sent Successfully",
                         "message_id" => $messageId,
                     ];
                 }
             } else {
                 http_response_code(400);
-                throw new Exception("Invalid request: missing or invalid input.");
+                throw new Exception("Not Sent");
             }
 
             echo json_encode($response);
