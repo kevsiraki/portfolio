@@ -52,5 +52,5 @@
   </li>
   <li>Entry HTML/PHP File</li>
   <li>.env (Be sure to make your own .env file!)</li>
-  <li>.git/README/LICENSE/favicon/sitemap Files</li>
+  <li>.git/root files</li>
 </ul>
