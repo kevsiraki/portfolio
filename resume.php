@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,16 +15,15 @@
         <meta property="og:type" content="website">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-title" content="Kevin Siraki Portfolio">
-        <title>Kevin Siraki - Web Developer, IT Specialist, Hardware Expert</title>
-        <link rel="canonical" href="https://kevinsiraki.com">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<meta name="msapplication-TileColor" content="#f5f5f5">
+        <meta name="theme-color" content="#f5f5f5">
+		<title>Kevin Siraki - Web Developer, IT Specialist, Hardware Expert</title>
+		<link rel="canonical" href="https://kevinsiraki.com">
+        <!-- Icons -->
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
-        <meta name="msapplication-TileColor" content="#f5f5f5">
-        <meta name="theme-color" content="#f5f5f5">
-		<link rel="manifest" href="manifest.json">
-		<script src="app.js"></script>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <!-- Stylesheets and Fonts -->
         <link rel="preload" href="views/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="views/css/style.css"></noscript>
@@ -31,14 +31,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap"></noscript>
-        <script src="views/js/faicons.js" defer></script>
-        <!-- Components -->
-        <script src="views/components/Header.js" defer></script>
-        <script src="views/components/Experience.js" defer></script>
-        <script src="views/components/Education.js" defer></script>
-        <script src="views/components/Skills.js" defer></script>
-        <script src="views/components/Contact.js" defer></script>
-        <script src="views/components/Footer.js" defer></script>
+		<!-- Scripts/JSONs -->
+		<link rel="manifest" href="manifest.json">
+        <script src="views/js/faicons.js" async defer></script>
+		<script src="app.js"></script>
     </head>
     <body>
         <header id="header"></header>
@@ -51,5 +47,12 @@
             </div>
         </div>
         <footer id="footer"></footer>
+		<!-- JS Components -->
+        <script src="views/components/Header.js" async></script>
+        <script src="views/components/Experience.js" defer></script>
+        <script src="views/components/Education.js" defer></script>
+        <script src="views/components/Skills.js" async defer></script>
+        <script src="views/components/Contact.js" async defer></script>
+        <script src="views/components/Footer.js" async defer></script>
     </body>
 </html>

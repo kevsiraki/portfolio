@@ -1,6 +1,6 @@
 const staticCacheName = 'site-static-v1.0.1';
 const assets = [
-  'views/components/Contact.js',
+  'views/components/OfflineContact.js',
   'views/components/Education.js',
   'views/components/Experience.js',
   'views/components/Footer.js',
@@ -32,19 +32,17 @@ self.addEventListener('activate', evt => {
 
 self.addEventListener('fetch', evt => {
   evt.respondWith(
-    caches.match(evt.request).then(cacheRes => {
-      if (cacheRes) {
-        return cacheRes;
-      }
-
-      return fetch(evt.request).then(fetchRes => {
-        return caches.open(staticCacheName).then(cache => {
-          cache.put(evt.request.url, fetchRes.clone());
-          return fetchRes;
-        });
-      });
-    }).catch(() => {
-      return caches.match('resume.html');
-    })
+    fetch(evt.request)
+      .then(res => {
+        // Clone the response to cache and then return it
+        const resClone = res.clone();
+        caches.open(staticCacheName)
+          .then(cache => cache.put(evt.request, resClone));
+        return res;
+      })
+      .catch(() => {
+        // Return the offline version when there's no internet connection
+        return caches.match('/resume.html');
+      })
   );
 });

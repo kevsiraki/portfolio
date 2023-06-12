@@ -140,7 +140,7 @@ class ContactSection {
             }
         </style>
         <div id="container">
-            <h1>&bull; Contact Me &bull;</h1>
+            <h1>Contact Me</h1>
             <div class="underline"></div>
             <form id="contact_form">
                 <div class="name">

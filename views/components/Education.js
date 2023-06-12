@@ -44,6 +44,10 @@ class EducationSection {
 				margin-left: auto;
 				margin-right: auto;
 			}
+			
+			.arrow4, .arrow5, .arrow6 {
+				font-size: 14px
+			}
 		</style>
 		<h1>Education</h1>
 		<p class="dropdown4"><span class="arrow4">&#9660;</span><em>CSU Northridge | Computer Science B.S.</em><br>8/2020 - 5/2022<br>3.95 GPA | Magna Cum Laude</p>

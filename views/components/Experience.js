@@ -53,6 +53,10 @@ class ExperienceSection {
 				margin-right: auto;
 				text-align: justify-center;
             }
+			
+			.arrow1, .arrow2, .arrow3 {
+				font-size: 14px
+			}
         </style>
         <h1>Experience</h1>
         <p class="dropdown1"><span class="arrow1">&#9660;</span><em>GUSD | IT/Tech Lead</em><br>9/2022 - Present</p>

@@ -66,7 +66,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetElement = document.getElementById(targetId);
         const targetOffsetTop = targetElement.offsetTop;
         window.scrollTo({
-            top: targetOffsetTop - headerHeight + 25,
+            top: targetOffsetTop - headerHeight + 37,
             behavior: 'smooth'
         });
     });
