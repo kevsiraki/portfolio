@@ -16,9 +16,9 @@ class Footer {
     <div>
 		<div>
 			<p><a href="mailto:kevsiraki@gmail.com"><i class="fa fa-envelope"></i>&nbsp;kevsiraki@gmail.com</a></p>
-			<a href="https://github.com/kevsiraki"><i class="fab fa-github"></i>&nbsp;GitHub</a>
+			<a href="https://github.com/kevsiraki" target="_blank"><i class="fab fa-github"></i>&nbsp;GitHub</a>
 			&nbsp;
-			<a href="http://donttrip.org"><i class="fa-solid fa-mountain"></i>&nbsp;Don't Trip</a>
+			<a href="http://donttrip.org" target="_blank"><i class="fa-solid fa-mountain"></i>&nbsp;Don't Trip</a>
         </div>
         <br>
         <p><i class="fa-solid fa-map"></i>&nbsp;Glendale, CA</p>
