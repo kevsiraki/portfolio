@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v1.0.1';
+const staticCacheName = 'site-static-v1.0.2';
 const assets = [
   'views/components/OfflineContact.js',
   'views/components/Education.js',
@@ -7,6 +7,7 @@ const assets = [
   'views/components/Header.js',
   'views/components/Skills.js',
   'views/css/style.css',
+  'views/css/font.css',
   'views/js/faicons.js',
   'resume.html'
 ];

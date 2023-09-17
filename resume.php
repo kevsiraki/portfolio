@@ -4,14 +4,14 @@
     <head>
         <!-- Meta Tags -->
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
         <meta name="description" content="Highlighting the skills and expertise of Kevin Siraki, a seasoned web developer, IT specialist, and hardware expert. Find a comprehensive resume showcasing technical proficiency and problem-solving capabilities.">
         <meta name="keywords" content="Kevin Siraki, Web developer, IT specialist, hardware expert, resume, technical skills, problem-solving, programming, software development, network administration, hardware troubleshooting">
         <meta name="author" content="Kevin Siraki">
         <meta name="robots" content="index, follow">
         <meta property="og:title" content="Kevin Siraki - Web Developer, IT Specialist, Hardware Expert">
-        <meta property="og:description" content="Highlighting the skills and expertise of Kevin Siraki, a seasoned web developer, IT specialist, and hardware expert. Find a comprehensive resume showcasing technical proficiency and problem-solving capabilities.">
-        <meta property="og:url" content="https://donttrip.org/resume/resume">
+        <meta property="og:description" content="Highlighting the skills and expertise of Kevin Siraki, a web developer, IT specialist, and hardware expert. Find a comprehensive resume showcasing technical proficiency and problem-solving capabilities.">
+        <meta property="og:url" content="https://www.kevinsiraki.com">
         <meta property="og:type" content="website">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-title" content="Kevin Siraki Portfolio">

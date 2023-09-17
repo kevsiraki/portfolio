@@ -72,6 +72,17 @@ class SkillsSection {
                 <li><i class="fa-brands fa-unity"></i>&nbsp;Unity</li>
             </ul>
         </section>
+		<section>
+            <h1>Soft Skills</h1>
+            <ul class="skill-set">
+                <li><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;Adaptable</li>
+				<li><i class="fa-solid fa-brain"></i>&nbsp;Critical Thinker</li>
+                <li><i class="fa-solid fa-calculator"></i></i>&nbsp;Pragmatic</li>
+                <li><i class="fa-solid fa-magnifying-glass-dollar"></i>&nbsp;Meticulous</li>
+                <li><i class="fa-solid fa-book-atlas"></i>&nbsp;Continuous Learner</li>
+                <li><i class="fa-solid fa-users-rectangle"></i>&nbsp;Effective Communicator</li>
+            </ul>
+        </section>
         <section>
             <h1>Hobbies and Interests</h1>
             <ul class="skill-set">

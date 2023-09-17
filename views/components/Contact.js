@@ -47,7 +47,6 @@ class ContactSection {
             /* Form styles */
             form {
                 padding: 0px;
-
                 margin: 50px 0;
             }
 

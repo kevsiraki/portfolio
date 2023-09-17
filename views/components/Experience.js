@@ -41,13 +41,13 @@ class ExperienceSection {
             .dropdown3:hover,
             #info:hover,
             #details:hover {
-                color: black !important;
+                color: black ;
             }
 
             .dropdown-content1 p,
             .dropdown-content2 p,
             .dropdown-content3 p {
-                color: black !important;
+                color: black ;
 				width: 75%;
 				margin-left: auto;
 				margin-right: auto;
@@ -57,31 +57,38 @@ class ExperienceSection {
 			.arrow1, .arrow2, .arrow3 {
 				font-size: 14px
 			}
+			
+			#dt-link, #minecraft-link {
+				color: blue;
+			}
         </style>
         <h1>Experience</h1>
-        <p class="dropdown1"><span class="arrow1">&#9660;</span><em>GUSD | IT/Tech Lead</em><br>9/2022 - Present</p>
+        <p class="dropdown1"><span class="arrow1">&#9660;</span><em>GUSD | IT/School Tech Lead</em><br>9/2022 - Present</p>
         <div class="dropdown-content1">
-            <p>- Responsible for setup and configuration of computers and switches in collaboration with IT Admins.</p>
-            <p>- Successfully handling nearly all troubleshooting and website issues independently.</p>
+            <p>- Responsible for configuration of hardware/software in collaboration with IT Admins.</p>
             <p>- Teaching technology-related curriculum in liaison with numerous certificated instructors.</p>
             <p>- Creating engaging lesson plans with variable difficulty for all grade levels.</p>
-            <p>- Facilitating the use of technology such as 3D printers to enhance classroom environments.</p>
-            <p>- Achieving a >90% success rate in student Chromebook repairs.</p>
-        </div>
+            <p>- Facilitating the use of technology such as 3D printers to enhance student engagement.</p>
+			<p>- Reviving systems deemed non-functional, resulting in substantial savings for the District.</p>
+			<p>- Restoring hardware through comprehensive troubleshooting and maintenance, 95% Chromebook repair success rate.</p>	
+			<p>- Leveraging Bash/launchd on macOS to automate routine tasks across several systems.</p>
+			<p>- Streamlining transition from DHCP to static device IPs for devices on VLANs.</p>
+		</div>
         <p class="dropdown2"><span class="arrow2">&#9660;</span><em>Don't Trip | Lead Developer</em><br>1/2021 - 7/2022</p>
         <div class="dropdown-content2">
-            <p>- A full-stack progressive web app that generates a personalized dynamic list of places based on destination and trip length.</p>
+            <p>- <a id="dt-link" href="https://donttrip.org" target = "_blank">A full-stack PWA</a> that generates a personalized dynamic list of places based on destination and trip length.</p>
             <p>- Garnered over 1500 page visits in the first month, primarily from CSUN students.</p>
             <p>- Migrated from AWS to in-house server for cost and control over hardware.</p>
-            <p>- Implemented automatic night mode with adaptive UI.</p>
+            <p>- Implemented time-based dark/light mode with adaptive UI.</p>
             <p>- Features 2FA, protection against brute force, CSRF tokens, and SQL injection prevention.</p>
-            <p>- Third-party SSO integrations through Google, Discord, and Steam.</p>
+            <p>- Integrated third-party sign-in options through Google, Discord, and Steam.</p>
         </div>
-        <p class="dropdown3"><span class="arrow3">&#9660;</span><em>Self Employed | PC Builder</em><br>5/2018 - Present</p>
+        <p class="dropdown3"><span class="arrow3">&#9660;</span><em>Freelance | PC Hardware Consulting</em><br>5/2018 - Present</p>
         <div class="dropdown-content3">
-            <p>- Independently specced and built over 20 server-grade and/or gaming systems.</p>
-            <p>- Advertised services via social media to colleagues and coworkers.</p>
-            <p>- Currently utilizing my skills to create cost-effective solutions for computing requirements.</p>
+            <p>- Independently specced and built over 50 server-grade and/or gaming systems.</p>
+			<p>- Using specialized equipment such as multimeters, oscilloscopes, EEPROM programmers, and PSU testers to perform pinpointed troubleshooting.</p>
+			<p>- Wrote a software suite of stress tests for in-depth CPU/RAM stability checking in C.</p>
+            <p>- Applying my skills and market knowledge to develop efficient solutions for my clientele.</p>
         </div>
         `;
         this.sectionElement.innerHTML = sectionContent;
