@@ -1,0 +1,233 @@
+/* Reset default styles */
+html, body {
+    font-family: 'Comfortaa', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    background: linear-gradient(45deg, #f5f5f5, #dcdcdc, #f5f5f5, #dcdcdc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact card */
+.contact-card {
+    background: linear-gradient(45deg, #F8F8F8, #E6E6E6, #F8F8F8, #E6E6E6);
+    background-size: 200% 200%;
+    animation: gradient-animation 2s linear;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Contact photo */
+.contact-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 35%;
+    margin: 0 auto 10px;
+}
+
+/* Social icons */
+.fa-youtube {
+    color: #FF0000;
+}
+
+.fa-github {
+    background: linear-gradient(to right, dimgray, #6A488D);
+}
+
+.fa-server {
+    background: linear-gradient(to right, dimgray, green);
+}
+
+.fa-mountain {
+    background: linear-gradient(to right, #EF0E19, dimgray, #15B549);
+}
+
+.fa-envelope {
+    background: linear-gradient(to bottom, #007AFF, #00A6FF);
+}
+
+.fa-address-card {
+    background: linear-gradient(to right, #FF7385, #3374C4, #FFB44D);
+}
+
+.fa-location-pin {
+    background: linear-gradient(to right, #4285F4, #0F9D58, #F4B400, #DB4437);
+}
+
+.fa-github, .fa-server, .fa-mountain, .fa-envelope, .fa-address-card, .fa-location-pin {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Contact information */
+.contact-name {
+    font-size: 24px;
+}
+
+.contact-phone {
+    margin-top: 10px;
+}
+
+.contact-links {
+    position: relative;
+    top: 10px;
+}
+
+#location {
+    top: 10px;
+}
+
+/* Container for job information */
+.container {
+    display: flex;
+    align-items: justify !important;
+    text-align: center !important;
+    position: relative;
+    top: 0px;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.left {
+    text-align: right;
+    margin-right: 5px;
+}
+
+.right {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.line {
+    border-left: 1px solid black;
+    height: 60px;
+    margin: 0 10px;
+}
+
+/* Job position and company */
+.position {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.company {
+    font-weight: bold;
+}
+
+/* Media query for landscape/small screens */
+@media screen and (max-height: 470px) {
+	html, body {
+		height: 100%;
+	}
+	
+    body {
+		background: #dcdcdc !important;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+		flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: flex-start; /* Align items to the start of the container */
+    }
+	
+    .contact-card {
+		flex-shrink: 1; /* This item can shrink twice as much as others */
+        width:90%;
+		align-items: center;
+		font-size: 14px;
+    }
+	
+    .contact-links, .contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+		align-items: center;
+        text-align: center;
+		flex-wrap: wrap !important; /* Allow items to wrap to the next line */
+        justify-content: flex-start !important; /* Align items to the start of the container */
+    }
+	
+    .contact-links p, .contact-info p, .contact-info sub {
+		flex: 1; /* Allow items to grow or shrink equally */
+        margin: 20px;
+    }
+	
+	.contact-info p {
+		font-size: 12px;
+	}
+}
+
+/* Media query for landscape/small screens */
+@media screen and (max-width: 700px) and (max-height: 470px) {
+	html, body {
+		height: 100%;
+	}
+	
+    body {
+		background: #dcdcdc !important;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+	
+    .contact-card {
+		align-items: center;
+		width: 90%;
+		font-size: 14px;
+    }
+	
+    .contact-links, .contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+		align-items: center;
+        text-align: center;
+		flex-wrap: wrap !important; /* Allow items to wrap to the next line */
+        justify-content: flex-start !important; /* Align items to the start of the container */
+    }
+	
+    .contact-links p, .contact-info p, .contact-info sub {
+		flex: 1; /* Allow items to grow or shrink equally */
+        margin: 20px;
+    }
+	
+	.contact-info p {
+		font-size: 12px;
+	}
+}
