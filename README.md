@@ -11,7 +11,7 @@
   <li>contact/
    <ul>
     <li>Scalable Digital Contact Card</li>
-	<li><img src = "views/screenshot.png" width="75" height="105"> </img></li>
+	<li><img src = "views/screenshot.png"> </img></li>
    </ul>
   </li>
   <li>api/
