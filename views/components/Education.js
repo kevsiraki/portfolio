@@ -52,20 +52,14 @@ class EducationSection {
 		<h1>Education</h1>
 		<p class="dropdown4"><span class="arrow4">&#9660;</span><em>CSUN | Computer Science B.S.</em><br>8/2020 - 5/2022<br>3.95 GPA | Magna Cum Laude</p>
 		<div class="dropdown-content4">
-			<p>- Awarded Northrop Foundation Endowed Departmental Scholarship for academic excellence.</p>
-			<p>- Tutored 4 fellow students in a Functional Programming course.</p>
-			<p>- All grades at the end of their research project resulted in an A- or above.</p>
+			<p>• Awarded Northrop Foundation Endowed Scholarship.</p>
+			<p>• Tutored fellow students in Functional Programming with excellent results.</p>
 		</div>
 		<p class="dropdown5"><span class="arrow5">&#9660;</span><em>GCC | Computer Science Transfer</em><br>8/2017 - 6/2020<br>3.70 GPA | Dean's List</p>
 		<div class="dropdown-content5">
-			<p>- Tutored students in Data Structures with C++.</p>
-			<p>- Students went from a C grade level to As/Bs by finals.</p>
+			<p>• Part-time Data Structures tutor, students made significant grade improvements.</p>
 		</div>
-		<p class="dropdown6"><span class="arrow6">&#9660;</span><em>CVHS | Diploma</em><br>9/2013 - 6/2017<br>3.70 GPA</p>
-		<div class="dropdown-content6">
-			<p>- Committee for Armenian Students in Public Schools award for outstanding GPA</p>
-			<p>- Participated in the Robotics competition in freshman year.</p>
-		</div>
+
     `;
         this.sectionElement.innerHTML = sectionContent;
     }
