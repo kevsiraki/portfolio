@@ -57,7 +57,7 @@ class EducationSection {
 		</div>
 		<p class="dropdown5"><span class="arrow5">&#9660;</span><em>GCC | Computer Science Transfer</em><br>8/2017 - 6/2020<br>3.70 GPA | Dean's List</p>
 		<div class="dropdown-content5">
-			<p>• Part-time Data Structures tutor, students made significant grade improvements.</p>
+			<p>• Part-time Data Structures tutor; Students made significant grade improvements.</p>
 		</div>
 
     `;
