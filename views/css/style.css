@@ -38,9 +38,10 @@ input, textarea {
 /* Wrapper div styles */
 .wrapper {
 	height: 100%;
-	text-align: center;
 	display: flex;
+	align-items: center;
 	justify-content: center;
+	text-align: center;
 	transition: padding 0.3s ease; /* Smooth transition effect */
 	padding-top: 90px;
 	margin-top: 90px;

@@ -19,7 +19,7 @@ class Footer {
 	</style>
     <div>
 		<div>
-			<p> <a href="views/Kevin Siraki Resume.pdf" download>Downlod Resume</a>  </p>
+			<p> <a href="views/Kevin Siraki Resume.pdf" download>Download Resume</a>  </p>
 			<p><a href="mailto:kevsiraki@gmail.com"><i class="fa fa-envelope"></i>&nbsp;kevsiraki@gmail.com</a></p>
 			<p>
 				<a href="https://github.com/kevsiraki" target="_blank"><i class="fab fa-github"></i>&nbsp;GitHub</a>&nbsp;

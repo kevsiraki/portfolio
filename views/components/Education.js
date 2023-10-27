@@ -19,7 +19,7 @@ class EducationSection {
 			
 			.dropdown-content4 p, .dropdown-content5 p, .dropdown-content6 p{
 				color: black ;
-				width: 75%;
+				width: 95%;
 				margin-left: auto;
 				margin-right: auto;
 				text-align: justify-center;
@@ -32,6 +32,12 @@ class EducationSection {
             #details {
                margin-bottom: 25px;
             }
+			
+            .dropdown-content4 ,
+            .dropdown-content5  {
+				width: 95%;
+				margin: auto;
+			}
 			
 			/* Dropdown hover styles */
 			.dropdown4:hover, .dropdown5:hover, .dropdown6:hover, #info:hover, #details:hover {
@@ -50,14 +56,15 @@ class EducationSection {
 			}
 		</style>
 		<h1>Education</h1>
-		<p class="dropdown4"><span class="arrow4">&#9660;</span><em>CSUN | Computer Science B.S.</em><br>8/2020 - 5/2022<br>3.95 GPA | Magna Cum Laude</p>
-		<div class="dropdown-content4">
-			<p>• Awarded Northrop Foundation Endowed Scholarship.</p>
-			<p>• Tutored fellow students in Functional Programming with excellent results.</p>
-		</div>
-		<p class="dropdown5"><span class="arrow5">&#9660;</span><em>GCC | Computer Science Transfer</em><br>8/2017 - 6/2020<br>3.70 GPA | Dean's List</p>
+		<p class="dropdown5"><span class="arrow5">&#9660;</span><em><b>Computer Science B.S.</b> | CSUN</em><br>8/2020 - 5/2022<br>3.95 GPA | Magna Cum Laude</p>
 		<div class="dropdown-content5">
-			<p>• Part-time Data Structures tutor; Students made significant grade improvements.</p>
+			<p>• Awarded 2 Northrop Foundation Endowed Scholarships for excellent academic achievement and essay.</p>
+			<p>• Tutored fellow students in Functional Programming, yielding excellent results and positive feedback.</p>
+		</div>
+		<p class="dropdown6"><span class="arrow6">&#9660;</span><em><b>Computer Science Transfer</b> | GCC</em><br>8/2017 - 6/2020<br>3.70 GPA | Dean's List</p>
+		<div class="dropdown-content6">
+			<p>• Part-time Data Structures and Algorithms tutor; Students made significant grade improvements by finals.</p>
+			<p>• Participated in a hackathon with fellow students where I showcased my 6502 computer, winning 1st place.</p>
 		</div>
 
     `;

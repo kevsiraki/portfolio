@@ -43,52 +43,73 @@ class ExperienceSection {
             #details:hover {
                 color: black ;
             }
+			
+			.dropdown-content1 ,
+            .dropdown-content2 ,
+            .dropdown-content3  {
+				width: 85%;
+				margin-left: auto;
+				margin-right: auto;
+			}
 
             .dropdown-content1 p,
             .dropdown-content2 p,
             .dropdown-content3 p {
                 color: black ;
-				width: 75%;
+				
 				margin-left: auto;
 				margin-right: auto;
-				text-align: justify-center;
+				
             }
 			
 			.arrow1, .arrow2, .arrow3 {
 				font-size: 14px
 			}
 			
-			#dt-link, #minecraft-link {
+			#dt-link, #minecraft-link, #java_c-link {
 				color: blue;
 			}
         </style>
         <h1>Experience</h1>
-        <p class="dropdown1"><span class="arrow1">&#9660;</span><em>GUSD | IT/Tech Lead</em><br>9/2022 - Present</p>
+        <p class="dropdown1"><span class="arrow1">&#9660;</span><em><b>IT, Technology Lead</b> | GUSD</em><br>9/2022 - Present</p>
         <div class="dropdown-content1">
-            <p>• Configured hardware/software in collaboration with IT Admins.</p>
-            <p>• Taught technology-related curriculum in collaboration with certificated instructors.</p>
-            <p>• Created engaging lesson plans for all grade levels.</p>
-            <p>• Facilitated technology use, including 3D printers, to enhance student engagement.</p>
-			<p>• Solved complex network issues in liaison with other systems administrations.</p>
-			<p>• Revived non-functional systems, resulting in substantial cost savings. Achieved a 95% success rate in Chromebook repairs.</p>
-			<p>• Leveraged Bash/launchd on macOS to automate routine tasks.</p>
-			<p>• Streamlined transition from DHCP to static device IPs on VLANs.</p>
+            <p>• Configured/troubleshot equipment/software including firewalls, switches, & routers whilst adhering to procedures.</p>
+			<p>• Employed Active Directory for user authentication, authorization, & network resource access control.</p>
+			<p>• Co-trained instructors in devising engaging lesson plans using Google Workspace and educational software.
+            <br><small>◦ Facilitated modern devices in lesson plans, such as 3D printers, reinforcing student interest.</small></p>
+            <p>• Maintained a 99% overall ticket resolution rate, escalating major issues to IT colleagues for timely resolution.
+			<br><small>◦ Adopted trend analysis to enhance our response time for resolving tickets more rapidly.
+			<br>◦ Revived non-functional systems, resulting in substantial cost savings and resource optimization.
+			<br>◦ Achieved a 95% success rate in Chromebook repairs to prevent e-waste and remain eco-friendly.</small></p>
+			<p>• Leveraged CMD, Bash, and launchd to automate recurring tasks, significantly enhancing productivity.</p>
+			<p>• Streamlined transition from DHCP to static device IPs for printers as well as print server hostname setup.</p>
 		</div>
-        <p class="dropdown2"><span class="arrow2">&#9660;</span><em>Don't Trip | Lead Developer</em><br>1/2021 - 7/2022</p>
+        <p class="dropdown2"><span class="arrow2">&#9660;</span><em><b>Full Stack Developer</b> | Don't Trip <small><sub>CSUN</sub></small></em><br>1/2021 - 5/2022</p>
         <div class="dropdown-content2">
-            <p>• Developed <a id="dt-link" href="https://donttrip.org" target = "_blank">a full-stack Google Maps based PWA</a> that generates personalized travel plans.</p>
-            <p>• Garnered over 1500 page visits in the first month, primarily from CSUN students.</p>
-            <p>• Migrated from AWS to custom in-house server for cost effectiveness.</p>
-            <p>• Implemented time-based dark/light mode with adaptive UI.</p>
-            <p>• Included 2FA, protection against brute force, CSRF, SQL injection, and other security threats.</p>
-            <p>• Integrated third-party SSO options through Google, Discord, and Steam.</p>
+            <p>• Led and collaborated with 2 developers to create a successful<a id="dt-link" href="https://donttrip.org" target = "_blank"> full-stack MVC Google Maps API based PWA.</a>
+            <br><small>◦ Generates personalized curated travel plans (“Tesla EV Charging Stations on the way to Palo Alto, CA”).</small></p>
+			<p>• Full CRUD for user preference history with regional popularity rating per location built in using the Yelp API.</p>
+			<p>• Garnered over 1500 page visits in 1 month (tracked in SQL), primarily from CSUN students/professors.</p>
+            <p>• Implemented time based theming and light/dark modes with adaptive UI throughout all the application routes.</p>
+            <p>• Included 2FA, salt hashing, brute force/CSRF/SQL injection protection, and iptables for security hardening.</p>
+            <p>• Integrated third-party SSO options through Google, Discord, and Steam for flexibility and authentication.</p>
+			<p>• Managed Agile development process with Git, Jira, and Docker for seamless yet timely deliverables.</p>
+			<p>• Conducted unit testing through Jenkins with PHPUnit to iron out edge cases with our controller/business logic.</p>
         </div>
-        <p class="dropdown3"><span class="arrow3">&#9660;</span><em>Freelance | PC/Server Consulting</em><br>5/2018 - Present</p>
+        <p class="dropdown3"><span class="arrow3">&#9660;</span><em><b>PC & Server Consulting</b> | Freelance</em><br>5/2018 - Present</p>
         <div class="dropdown-content3">
-            <p>• Independently built over 50 server-grade and gaming systems.</p>
-			<p>• Utilized specialized equipment for pinpointed troubleshooting.</p>
-			<p>• Developed a software suite for CPU/RAM stability testing in C.</p>
-            <p>• Provided efficient solutions based on market knowledge.</p>
+            <p>• Independently built over 50 server-grade and gaming systems within strict budgetary and time constraints.</p>
+			<p>• Utilized equipment such as multimeters, o-scopes, and EEPROM programmers for pinpointed debugging.</p>
+			<p>• Developed a systematic software suite for CPU, FPU, and RAM stability testing in C, PowerShell, Python, & Bash.
+			<br><small>◦ Contributed to open source core-by-core test software for AMD Zen 3 architecture (<i><u>corcycler</u></i> by <b>sp00n</b>).
+			<br>◦ Each system is subject to these comprehensive tests, yielding 100% stability results in each system.</small></p>
+            <p>• Provided cost-effective solutions based on up-to-date market knowledge for prospective and existing clients.</p>
+        </div>
+		<p class="dropdown4"><span class="arrow4">&#9660;</span><em><b>Java_C</b> | Compiler Design Project</em></p>
+        <div class="dropdown-content4">
+            <p>• Experimental<a id="java_c-link" href="https://github.com/kevsiraki/Java_C" target = "_blank"> Java to C compiler </a>featuring OOP, bounds checking on arrays, and subtyping.</p>
+			<p>• Used Apache Maven build automation in conjunction with J-Unit + JaCoCo to administer full-coverage unit tests.</p>
+			<p>• Compiler is fully capable of code execution; has a Tokenizer, Parser, Typechecker, and Code Generator.</p>
         </div>
         `;
         this.sectionElement.innerHTML = sectionContent;
