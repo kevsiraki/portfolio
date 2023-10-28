@@ -43,8 +43,8 @@ input, textarea {
 	justify-content: center;
 	text-align: center;
 	transition: padding 0.3s ease; /* Smooth transition effect */
-	padding-top: 90px;
-	margin-top: 90px;
+	padding-top: 75px;
+	margin-top: 75px;
 }
 
 .wrapper h1 {
@@ -58,10 +58,6 @@ input, textarea {
 .wrapper p em {
 	color: rgba(0, 0, 0, 1);
 	font-style: normal;
-}
-
-.wrapper section {
-	margin-top: 50px;
 }
 
 /* Link styles */

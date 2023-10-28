@@ -10,7 +10,6 @@ class ContactSection {
             /* Button styles */
             button {
                 overflow: visible;
-				
             }
 
             button, select {
@@ -139,6 +138,47 @@ class ContactSection {
                 font-size: 12px;
                 margin-top: -20px;
             }
+			
+			.wiggle-element {
+				animation: wiggle 1s linear infinite;
+			}
+			
+			@keyframes wiggle {
+				0% {
+					transform: translateX(0);
+				}
+				25% {
+					transform: translateX(-5px);
+				}
+				50% {
+					transform: translateX(5px);
+				}
+				75% {
+					transform: translateX(-5px);
+				}
+				100% {
+					transform: translateX(0);
+				}
+			}
+			
+			/* Fluctuating size animation for the button text */
+			@keyframes textFluctuateSize {
+				0% {
+					transform: scale(1);
+				}
+				25% {
+					transform: scale(1.1);
+				}
+				50% {
+					transform: scale(1);
+				}
+				75% {
+					transform: scale(1.1);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
         </style>
         <div id="container">
             <h1>Contact Me</h1>
@@ -159,7 +199,7 @@ class ContactSection {
                 <div id="char_counter"></div>
                 <br>
                 <div class="submit">
-                    <input type="button" class="hover-effect" value="Send" id="form_button" />
+					<input type="button" class="hover-effect" value="Send" id="form_button"/>
                 </div>
             </form>
         </div>
@@ -249,6 +289,7 @@ const sendData = async () => {
 
         if (response.ok) {
             setButtonStyle('#FFD580', 'Sending...');
+			button.style.animation = 'textFluctuateSize 1.5s infinite';
             setButtonDisabled(true);
             setTimeout(() => {
                 contactForm.innerHTML = result.message;
@@ -257,17 +298,20 @@ const sendData = async () => {
         } else {
             setButtonDisabled(true);
             setButtonStyle('#FFCCCB', result.message);
+			button.classList.add("wiggle-element");
             // Reset button style after 3 seconds
             setTimeout(() => {
                 setButtonDisabled(false);
+				button.classList.remove("wiggle-element");
                 setButtonStyle('#474544', 'Send');
-            }, 2000);
+            }, 1500);
         }
     } catch (error) {
         // Handle any errors
         console.error('Error:', error);
     }
 };
+
 
 // Message length counter
 messageInput.addEventListener("input", function() {

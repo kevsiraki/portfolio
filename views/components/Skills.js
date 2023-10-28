@@ -13,7 +13,6 @@ class SkillsSection {
                 text-align: center;
 				max-width: 100%;
 				margin: auto;
-				
             }
 			
             /* Skill set item styles */
