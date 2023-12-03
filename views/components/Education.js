@@ -38,7 +38,7 @@ class EducationSection {
             .dropdown-content5,
 			.dropdown-content6 
 			{
-				max-width:85%;
+				width: 85%;
             }
 
             .dropdown-content5 p,
@@ -51,6 +51,13 @@ class EducationSection {
 			.arrow6 {
                 font-size: 14px;
             }
+			
+			@media only screen and (min-width: 768px) {
+				.dropdown-content5,
+				.dropdown-content6 {
+					width: 65%; /* Adjust the width for larger screens */
+				}
+			}
         </style>
 		<h1>Education</h1>
 		<p class="dropdown5"><span class="arrow5">&#9660;</span><em><b>Computer Science B.S.</b> | CSUN</em><br>8/2020 - 5/2022<br>3.95 GPA | Magna Cum Laude</p>

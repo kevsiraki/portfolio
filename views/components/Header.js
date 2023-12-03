@@ -51,8 +51,13 @@ class Header {
 			opacity: 0;
 			margin-top: -75px;
 		}
+		
+		@media only screen and (max-width: 339px) {
+			.name p {
+				font-size: .65em;
+			}
+		}
       </style>
-
       <div class="name">
         <h1 class="name-heading"><a href = "https://www.kevinsiraki.com/contact/">Kevin <em>Siraki</em></a></h1>
         <p>

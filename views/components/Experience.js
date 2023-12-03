@@ -45,8 +45,8 @@ class ExperienceSection {
             .dropdown-content3,
 			.dropdown-content4 
 			{
-				max-width:85%;
-            }
+				width: 85%;
+			}
 
             .dropdown-content1 p,
             .dropdown-content2 p,
@@ -66,6 +66,15 @@ class ExperienceSection {
             #dt-link, #minecraft-link, #java_c-link {
                 color: blue;
             }
+			
+			@media only screen and (min-width: 768px) {
+				.dropdown-content1,
+				.dropdown-content2,
+				.dropdown-content3,
+				.dropdown-content4 {
+					width: 65%; /* Adjust the width for larger screens */
+				}
+			}
         </style>
         <h1>Experience</h1>
         <p class="dropdown1"><span class="arrow1">&#9660;</span><em><b>IT, Technology Lead</b> | GUSD</em><br>9/2022 - Present</p>
@@ -81,7 +90,7 @@ class ExperienceSection {
             <p>• Automated recurring tasks using CMD, Bash, and launchd, significantly improving productivity.</p>
             <p>• Streamlined the transition from DHCP to static device IPs for printers and print server setup.</p>
         </div>
-        <p class="dropdown2"><span class="arrow2">&#9660;</span><em><b>Full Stack Developer</b> | Don't Trip <small><sub>CSUN</sub></small></em><br>1/2021 - 5/2022</p>
+        <p class="dropdown2"><span class="arrow2">&#9660;</span><em><b>Full Stack Developer</b> | Don't Trip</em><br>1/2021 - 5/2022</p>
         <div class="dropdown-content2">
             <p>• Led a team of 2 developers to create <a id="dt-link" href="https://donttrip.org" target = "_blank">Don't Trip</a>, a successful Google Maps API based PWA using Laravel/PHP and Vue.js.
             <br><small>◦ Generates personalized curated travel plans (“Tesla EV Charging Stations on the way to Palo Alto, CA”).</small></p>

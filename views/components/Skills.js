@@ -11,7 +11,7 @@ class SkillsSection {
             ul {
                 padding: 0;
                 text-align: center;
-				max-width: 100%;
+				max-width: 1000px;
 				margin: auto;
             }
 			
