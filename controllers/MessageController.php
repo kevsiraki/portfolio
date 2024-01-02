@@ -1,6 +1,4 @@
 <?php
-require_once "../db/config.php";
-require_once "../models/MessageModel.php";
 
 class MessageController
 {
@@ -80,7 +78,7 @@ class MessageController
             exit();
 
         } catch (Exception $e) {
-            http_response_code(400);
+            http_response_code(500);
             $response = [
                 "status" => "error",
                 "message" => $e->getMessage(),

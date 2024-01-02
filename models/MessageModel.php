@@ -9,11 +9,11 @@ class MessageModel
     /**
      * MessageModel constructor.
      *
-     * @param mixed $link The database connection link.
+     * @param mixed $Config The database connection object.
      */
-    public function __construct($link)
+    public function __construct(Config $config)
     {
-        $this->link = $link;
+        $this->link = $config->getDatabaseConnection();
     }
 
     /**

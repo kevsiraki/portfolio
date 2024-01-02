@@ -48,11 +48,11 @@
         </div>
         <footer id="footer"></footer>
 		<!-- JS Components -->
-        <script src="views/components/Header.js" async></script>
-        <script src="views/components/Experience.js" defer></script>
-        <script src="views/components/Education.js" defer></script>
-        <script src="views/components/Skills.js" async defer></script>
-        <script src="views/components/Contact.js" async defer></script>
-        <script src="views/components/Footer.js" async defer></script>
+        <script type="module" src="views/components/Header/header.component.js" async></script>
+        <script type="module" src="views/components/Experience/experience.component.js" defer></script>
+        <script type="module" src="views/components/Education/education.component.js" defer></script>
+        <script type="module" src="views/components/Skills/skills.component.js" async defer></script>
+        <script type="module" src="views/components/Contact/contact.component.js" async defer></script>
+        <script type="module" src="views/components/Footer/footer.component.js" async defer></script>
     </body>
 </html>
