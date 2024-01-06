@@ -30,7 +30,7 @@ textarea {
     border: 1px solid #f5f5f5;
     background-size: cover;
     margin-bottom: 75px;
-    margin-top: 75px;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     width: 85%;

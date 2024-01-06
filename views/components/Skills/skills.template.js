@@ -75,5 +75,7 @@ export const skillsTemplate = `
     <li><i class="fa-brands fa-atlassian"></i>&nbsp;Agile, Atlassian Suite</li>
     <li><i class="fa-solid fa-microchip"></i>&nbsp;Embedded Systems, Hardware</li>
 </ul>
+<br>
+<iframe src="https://github-readme-stats.vercel.app/api/top-langs/?username=kevsiraki&layout=compact&exclude_repo=Unity2D-GoFish,kevsiraki" width="300" height="200" frameborder="0"></iframe>
 </section>
 `;
