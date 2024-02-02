@@ -1,6 +1,6 @@
 export const educationStyles = `
 #Education {
-    margin-top: -25px;
+    margin-top: -15px;
     display: flex;
     flex-direction: column;
     justify-content: center;

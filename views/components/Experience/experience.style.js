@@ -15,7 +15,8 @@ export const experienceStyles = `
 }
 
 details {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .dropdown {
@@ -24,7 +25,7 @@ details {
 }
 
 .dropdown:hover,
-.dropdown-content p
+.dropdown-content p,
 {
     color: black;
 }

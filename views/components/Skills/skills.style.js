@@ -1,4 +1,12 @@
 export const skillsStyles = `
+#Skills {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 ul {
     padding: 0;
     text-align: center;

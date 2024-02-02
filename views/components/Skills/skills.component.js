@@ -28,7 +28,7 @@ class SkillsSection {
                 const itemY = rect.top + rect.height / 2;
                 const deltaX = mouseX - itemX;
                 const deltaY = mouseY - itemY;
-                item.style.transform = `translate(${deltaX / 10}px, ${deltaY / 10}px)`;
+                item.style.transform = `translate(${deltaX / 5}px, ${deltaY / 5}px)`;
             });
 
             item.addEventListener('mouseleave', () => {

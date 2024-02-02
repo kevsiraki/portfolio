@@ -1,6 +1,7 @@
 export const skillsTemplate = `
+<h1 class="skills-heading">Skills</h1>
 <section>
-<h1>Programming Languages</h1>
+<h3>Programming Languages</h3>
 <ul class="skill-set">
     <li><i class="fa-brands fa-js"></i>&nbsp;JavaScript</li>
     <li><i class="fa-solid fa-keyboard"></i>&nbsp;TypeScript</li>
@@ -13,7 +14,7 @@ export const skillsTemplate = `
 </ul>
 </section>
 <section>
-<h1>Backend</h1>
+<h3>Backend</h3>
 <ul class="skill-set">
     <li><i class="fa-solid fa-database"></i>&nbsp;SQL, RDBMS</li>
     <li><i class="fa-solid fa-sitemap"></i></i>&nbsp;MongoDB, NoSQL</li>
@@ -35,7 +36,7 @@ export const skillsTemplate = `
 </ul>
 </section>
 <section>
-<h1>Frontend</h1>
+<h3>Frontend</h3>
 <ul class="skill-set">
     <li><i class="fa-brands fa-html5"></i>&nbsp;HTML</li>
     <li><i class="fa-brands fa-css3-alt"></i>&nbsp;CSS</li>
@@ -53,7 +54,7 @@ export const skillsTemplate = `
 </ul>
 </section>
 <section>
-<h1>Other Skills</h1>
+<h3>Other Skills</h3>
 <ul class="skill-set">
     <li><i class="fa-brands fa-microsoft"></i>&nbsp;MS Office</li>
     <li><i class="fa-solid fa-terminal"></i>&nbsp;Bash, Crontab</li>
