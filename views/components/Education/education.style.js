@@ -1,7 +1,6 @@
 export const educationStyles = `
 #Education {
-    margin-top: 5px;
-    margin-bottom: 25px;
+    margin-top: -25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,10 +11,6 @@ export const educationStyles = `
 #info {
     font-size: 1.1em;
     text-align: left;
-}
-
-details {
-    margin-top: 20px;
 }
 
 .dropdown {

@@ -1,5 +1,4 @@
 export const skillsStyles = `
-/* List styles */
 ul {
     padding: 0;
     text-align: center;
@@ -7,7 +6,6 @@ ul {
     margin: auto;
 }
 
-/* Skill set item styles */
 .skill-set li {
     background: rgba(17, 84, 204, .15);
     border-radius: 35px;
@@ -21,12 +19,10 @@ ul {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Add the hover effect */
 .skill-set li:hover {
-    transform: translate(5px, -5px); /* Adjust the values as needed */
+    transform: translate(5px, -5px);
 }
 
-/* Reset cursor for non-link list items */
 .skill-set li:not(.hover-item) {
     cursor: default;
 }

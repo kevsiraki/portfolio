@@ -15,7 +15,7 @@ export const experienceStyles = `
 }
 
 details {
-    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 .dropdown {
