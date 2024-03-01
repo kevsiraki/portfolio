@@ -15,7 +15,7 @@ export const educationStyles = `
 
 .dropdown {
     padding: 1px;
-    text-align: center; /* Center the text */
+    text-align: center;
 }
 
 .dropdown:hover,

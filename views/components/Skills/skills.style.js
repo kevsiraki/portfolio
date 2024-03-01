@@ -7,6 +7,11 @@ export const skillsStyles = `
     align-items: center;
 }
 
+#Skills .dropdown {
+    margin-top: 0px;
+    font-size: 24px;
+}
+
 ul {
     padding: 0;
     text-align: center;
@@ -34,4 +39,6 @@ ul {
 .skill-set li:not(.hover-item) {
     cursor: default;
 }
+
+
 `;

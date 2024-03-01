@@ -21,7 +21,7 @@ details {
 
 .dropdown {
     padding: 1px;
-    text-align: center; /* Center the text */
+    text-align: center;
 }
 
 .dropdown:hover,
@@ -37,5 +37,15 @@ details {
 
 #dt-link, #minecraft-link, #java_c-link {
     color: blue;
+}
+
+summary {
+    cursor: unset;
+}
+
+.dropdown:focus,
+summary:active,
+summary:focus {
+  background-color: white !important;
 }
 `;

@@ -33,7 +33,13 @@ textarea {
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
+    width: 40vw;
+}
+
+@media screen and (max-width: 1200px) {
+    #container {
+        width: 82vw;
+    }
 }
 
 /* Form styles */
