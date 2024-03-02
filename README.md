@@ -2,8 +2,9 @@
 # Portfolio
 <p>A unique portfolio website with a contact form and an easy-to-use file structure for you to work upon.</p>
 <p>
-	Aimed towards promoting a simple yet effective paradigm, this portfolio features seperation of 
-	concerns following the MVC approach and uses only vanilla JS and PHP. #dontusejsframeworksforeverything
+	Aimed towards promoting a simple yet effective paradigm, this portfolio features seperation of concerns following the MVC approach and uses only vanilla JS and PHP. The code follows a singleton pattern with proper dependency injection.  
+  
+  The backend features separate models and controllers for contact form interaction and page visit tracking, ensuring structured code organization and efficient handling of user interactions and analytics.
 </p>
 <p><a href="https://www.kevinsiraki.com/"> Demo</a><p>
 <h3>Structure</h3>
@@ -31,7 +32,7 @@
   </li>
   <li>db/
     <ul>
-      <li>Database Configuration Files</li>
+      <li>Database Schema/Config</li>
     </ul>
   </li>
   <li>views/

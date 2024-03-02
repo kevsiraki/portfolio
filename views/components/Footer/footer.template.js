@@ -1,7 +1,7 @@
 export const footerTemplate = `
 <div>
 <div>
-    <p> <a href="../views/Kevin Siraki Resume 2024.pdf" download>Download Resume</a>  </p>
+    <p> <a href="../views/Kevin Siraki Resume 2024.pdf" download><i class="fa-regular fa-file-pdf"></i>&nbsp;Download Resume</a>  </p>
     <p><a href="mailto:kevsiraki@gmail.com"><i class="fa fa-envelope"></i>&nbsp;kevsiraki@gmail.com</a></p>
     <p>
         <a href="https://github.com/kevsiraki" target="_blank"><i class="fab fa-github"></i>&nbsp;GitHub</a>&nbsp;&nbsp;

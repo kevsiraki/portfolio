@@ -24,4 +24,3 @@ $messageController = new MessageController($messageModel);
 
 // Handle the incoming request
 $messageController->handleRequest();
-?>

@@ -111,55 +111,54 @@ class MessageModel
         $input = strip_tags($input);
         return $input;
     }
-	
-	/**
-	 * Get the last request time from the database for the specified IP address.
-	 *
-	 * @param string $ip The IP address.
-	 * @return int|null The last request time, or null if not found.
-	 */
-	public function getLastRequestTime($ip)
-	{
-		$sql = "SELECT last_request_time FROM rate_limit WHERE ip = ?";
-		$stmt = $this->link->prepare($sql);
-		$stmt->bind_param("s", $ip);
-		$stmt->execute();
-		$stmt->bind_result($lastRequestTime);
-	
-		if ($stmt->fetch()) {
-			return $lastRequestTime;
-		}
-	
-		return null;
-	}
-	
-	/**
-	* Update the last request time for the specified IP address in the database.
-	*
-	* @param string $ip The IP address.
-	* @param int $currentTime The current time.
-	* @return bool True if the update was successful, false otherwise.
-	*/
-	public function updateLastRequestTime($ip, $currentTime)
-	{
-		$existingTime = $this->getLastRequestTime($ip);
-	
-		if ($existingTime !== null) {
-			// Update the existing record
-			$sql = "UPDATE rate_limit SET last_request_time = ? WHERE ip = ?";
-			$stmt = $this->link->prepare($sql);
-			$stmt->bind_param("is", $currentTime, $ip);
-			$success = $stmt->execute();
-		} else {
-			// Create a new record
-			$sql = "INSERT INTO rate_limit (ip, last_request_time) VALUES (?, ?)";
-			$stmt = $this->link->prepare($sql);
-			$stmt->bind_param("si", $ip, $currentTime);
-			$success = $stmt->execute();
-		}
-	
-		$stmt->close();
-		return $success;
-	}
+
+    /**
+     * Get the last request time from the database for the specified IP address.
+     *
+     * @param string $ip The IP address.
+     * @return int|null The last request time, or null if not found.
+     */
+    public function getLastRequestTime($ip)
+    {
+        $sql = "SELECT last_request_time FROM rate_limit WHERE ip = ?";
+        $stmt = $this->link->prepare($sql);
+        $stmt->bind_param("s", $ip);
+        $stmt->execute();
+        $stmt->bind_result($lastRequestTime);
+
+        if ($stmt->fetch()) {
+            return $lastRequestTime;
+        }
+
+        return null;
+    }
+
+    /**
+     * Update the last request time for the specified IP address in the database.
+     *
+     * @param string $ip The IP address.
+     * @param int $currentTime The current time.
+     * @return bool True if the update was successful, false otherwise.
+     */
+    public function updateLastRequestTime($ip, $currentTime)
+    {
+        $existingTime = $this->getLastRequestTime($ip);
+
+        if ($existingTime !== null) {
+            // Update the existing record
+            $sql = "UPDATE rate_limit SET last_request_time = ? WHERE ip = ?";
+            $stmt = $this->link->prepare($sql);
+            $stmt->bind_param("is", $currentTime, $ip);
+            $success = $stmt->execute();
+        } else {
+            // Create a new record
+            $sql = "INSERT INTO rate_limit (ip, last_request_time) VALUES (?, ?)";
+            $stmt = $this->link->prepare($sql);
+            $stmt->bind_param("si", $ip, $currentTime);
+            $success = $stmt->execute();
+        }
+
+        $stmt->close();
+        return $success;
+    }
 }
-?>

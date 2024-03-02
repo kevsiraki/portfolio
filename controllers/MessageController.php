@@ -33,21 +33,21 @@ class MessageController
             if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
                 throw new Exception("Invalid request method. Only POST method is allowed.");
             }
-			
-			// Check for invalid message spam.
-			$ip = $_SERVER['REMOTE_ADDR'];
-			$lastRequestTime = $this->model->getLastRequestTime($ip);
-	
-			if ($lastRequestTime !== null) {
-				$timeDiff = time() - $lastRequestTime;
-				if ($timeDiff < 3) {
-					// Less than 3 seconds since the last request, rate limit exceeded
-					throw new Exception("Try Again");
-				}
-			}
-			
-			$this->model->updateLastRequestTime($ip, time());
-			
+
+            // Check for invalid message spam.
+            $ip = $_SERVER['REMOTE_ADDR'];
+            $lastRequestTime = $this->model->getLastRequestTime($ip);
+
+            if ($lastRequestTime !== null) {
+                $timeDiff = time() - $lastRequestTime;
+                if ($timeDiff < 3) {
+                    // Less than 3 seconds since the last request, rate limit exceeded
+                    throw new Exception("Try Again");
+                }
+            }
+
+            $this->model->updateLastRequestTime($ip, time());
+
             if ($this->model->isValidMessageData($data)) {
                 $sanitizedData = $this->model->sanitizeMessageData($data);
 
@@ -88,4 +88,3 @@ class MessageController
         }
     }
 }
-?>

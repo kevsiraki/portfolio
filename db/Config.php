@@ -73,7 +73,8 @@ class Config
      */
     private function loadEnv()
     {
-        $envFilePath = '../.env';
+        $envFilePath = __DIR__ . '/../.env';
+
         if (file_exists($envFilePath)) {
             $envVariables = $this->parseEnvFile($envFilePath);
 
@@ -116,4 +117,3 @@ class Config
         return $envVariables;
     }
 }
-?>

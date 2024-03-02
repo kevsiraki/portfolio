@@ -35,5 +35,4 @@ footer {
 .emoji {
     vertical-align: middle;
 }
-
 `;
