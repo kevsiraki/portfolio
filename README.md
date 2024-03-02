@@ -5,6 +5,8 @@
 	Aimed towards promoting a simple yet effective paradigm, this portfolio features seperation of concerns following the MVC approach and uses only vanilla JS and PHP. The code follows a singleton pattern with proper dependency injection.  
   
   The backend features separate models and controllers for contact form interaction and page visit tracking, ensuring structured code organization and efficient handling of user interactions and analytics.
+
+  For messages, I personally have a secure automated pipeline that emails me the contents of the <i>messages</i> table with Crontab, I may create a repository and documentation for this aspect of my personal stack in the future.
 </p>
 <p><a href="https://www.kevinsiraki.com/"> Demo</a><p>
 <h3>Structure</h3>
@@ -54,7 +56,6 @@
       </li>
     </ul>
   </li>
-  <li>Entry HTML/PHP File</li>
-  <li>.env (Be sure to make your own .env file!)</li>
-  <li>.git/root files</li>
+  <li>Entry/Root (resume.php)</li>
+  <li>example.env</li>
 </ul>
