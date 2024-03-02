@@ -2,10 +2,7 @@
 require_once "db/Config.php";
 require_once 'models/PageVisitModel.php';
 require_once 'controllers/PageVisitController.php';
-$config = Config::getInstance();
-$model = new PageVisitModel($config);
-$controller = new PageVisitController($model);
-$controller->recordPageVisit();
+(new PageVisitController(new PageVisitModel(Config::getInstance())))->recordPageVisit();
 ?>
 <!DOCTYPE html>
 <html lang="en">
