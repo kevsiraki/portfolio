@@ -12,6 +12,11 @@ export const skillsStyles = `
     font-size: 24px;
 }
 
+#Skills .sub-dropdown {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
 ul {
     padding: 0;
     text-align: center;

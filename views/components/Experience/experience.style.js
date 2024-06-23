@@ -24,6 +24,10 @@ details {
     text-align: center;
 }
 
+.sub {
+    font-size: 0.9em;
+}
+
 .dropdown:hover,
 .dropdown-content p,
 {

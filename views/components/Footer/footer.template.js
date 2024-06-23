@@ -9,16 +9,14 @@ export const footerTemplate = `
         
     </p>
     <p>
-        <a href="https://projects.kevinsiraki.com" target="_blank"><i class="fa-solid fa-blog"></i>&nbsp;Project Blog</a>
-        &nbsp;&nbsp;
-        <small id = "hardware"><a target="_blank" href="https://donttrip.org/hardware" download><i class="fa-solid fa-server"></i>&nbsp;About The Server</a></small>
+        <a href="https://blog.kevinsiraki.com" target="_blank"><i class="fab fa-wordpress"></i>&nbsp;WordPress Blog</a>
     </p>
 </div>
 <p class="footer-heart">
         Made with <g-emoji class="g-emoji" alias="heart"
-            fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+            fallback-src="views/heart.png">
             <img class="emoji" alt="heart" height="20" width="20"
-                src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> by <a
+                src="views/heart.png"></g-emoji> by <a
             href="https://www.kevinsiraki.com/contact/" target="_blank">Kevin</a>
     </p>
      <small>&copy; 2024 All rights reserved.</small>

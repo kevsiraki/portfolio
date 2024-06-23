@@ -35,19 +35,10 @@ require_once 'controllers/PageVisitController.php';
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <!-- Stylesheets and Fonts -->
     <link rel="preload" href="views/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="views/css/style.css">
-    </noscript>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora&display=swap" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap">
-    </noscript>
+    <link rel="preload" href="views/css/font.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <!-- Scripts/JSONs -->
     <link rel="manifest" href="manifest.json">
-    <script src="views/js/faicons.js" async defer></script>
+    <script src="views/js/faicons.js" defer></script>
     <script src="app.js"></script>
 </head>
 
@@ -66,9 +57,9 @@ require_once 'controllers/PageVisitController.php';
     <script type="module" src="views/components/Header/header.component.js" async></script>
     <script type="module" src="views/components/Experience/experience.component.js" defer></script>
     <script type="module" src="views/components/Education/education.component.js" defer></script>
-    <script type="module" src="views/components/Skills/skills.component.js" async defer></script>
-    <script type="module" src="views/components/Contact/contact.component.js" async defer></script>
-    <script type="module" src="views/components/Footer/footer.component.js" async defer></script>
+    <script type="module" src="views/components/Skills/skills.component.js" defer></script>
+    <script type="module" src="views/components/Contact/contact.component.js" defer></script>
+    <script type="module" src="views/components/Footer/footer.component.js" defer></script>
 </body>
 
 </html>
