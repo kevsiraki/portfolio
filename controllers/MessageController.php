@@ -73,18 +73,14 @@ class MessageController
                 http_response_code(400);
                 throw new Exception("Not Sent");
             }
-
-            echo json_encode($response);
-            exit();
-
+            die(json_encode($response));
         } catch (Exception $e) {
             http_response_code(500);
             $response = [
                 "status" => "error",
                 "message" => $e->getMessage(),
             ];
-            echo json_encode($response);
-            exit();
+            die(json_encode($response));
         }
     }
 }

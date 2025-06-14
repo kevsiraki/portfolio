@@ -52,6 +52,9 @@ require_once 'controllers/PageVisitController.php';
             <section id="Contact"></section>
         </div>
     </div>
+    <?php
+        //echo '<small><sub>Current PHP version: ' . PHP_VERSION . '</sub></small>';
+    ?>
     <footer id="footer"></footer>
     <!-- JS Components -->
     <script type="module" src="views/components/Header/header.component.js" async></script>

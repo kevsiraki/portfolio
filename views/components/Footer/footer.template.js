@@ -19,6 +19,6 @@ export const footerTemplate = `
                 src="views/heart.png"></g-emoji> by <a
             href="https://www.kevinsiraki.com/contact/" target="_blank">Kevin</a>
     </p>
-     <small>&copy; 2024 All rights reserved.</small>
+     <small>&copy; ${new Date().getFullYear()} All rights reserved.</small>
 </div>
 `;

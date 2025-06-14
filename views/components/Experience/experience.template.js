@@ -55,7 +55,7 @@ export const experienceTemplate = `
             I am currently working on several personal projects, including the IoT Environment Analysis API, a REST API designed for data analysis. This API is thoroughly tested with J-Unit and documented using Swagger. It receives JSON payloads from ESP32 MCUs, which are deserialized and stored in a MySQL database. To optimize performance, I have implemented schema normalization, Redis for caching, and pagination, resulting in a reduction of API response latency by approximately 50 ms per 100 KB response size.
         </p>
         <p>
-            In addition to this, I am also involved in developing automation software for my in-home servers, developing custom firmware and interfaces for TTL-based DRAM chips, and implementing database replication strategies.
+            In addition to this, I am also involved in developing automation software for my in-home servers, crafting cloud-based music streaming microservices to supplement Don't Trip, writing custom firmware and interfaces for TTL-based DRAM chips, and implementing experimental database replication strategies.
         </p>
     </div>
 </details>
