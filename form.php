@@ -43,26 +43,11 @@ require_once 'controllers/PageVisitController.php';
 </head>
 
 <body>
-    <header id="header"></header>
-    <div class="wrapper">
-        <div class="inner">
-            <section id="Experience"></section>
-            <section id="Education"></section>
-            <section id="Skills"></section>
-            <section id="Contact"></section>
-        </div>
-    </div>
-    <?php
-        //echo '<small><sub>Current PHP version: ' . PHP_VERSION . '</sub></small>';
-    ?>
-    <footer id="footer"></footer>
-    <!-- JS Components -->
-    <script type="module" src="views/components/Header/header.component.js" async></script>
-    <script type="module" src="views/components/Experience/experience.component.js" defer></script>
-    <script type="module" src="views/components/Education/education.component.js" defer></script>
-    <script type="module" src="views/components/Skills/skills.component.js" defer></script>
-    <script type="module" src="views/components/Contact/contact.component.js" defer></script>
-    <script type="module" src="views/components/Footer/footer.component.js" defer></script>
+    <section id="Contact">
+    </section>
+
+    <script type="module" src="views/components/Contact/contact.component.js"></script>
+
 </body>
 
 </html>

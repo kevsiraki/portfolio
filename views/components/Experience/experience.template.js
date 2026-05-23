@@ -1,62 +1,193 @@
 export const experienceTemplate = `
-<h1>Experience</h1>
+<div class="experience-header">
+    <h1>Experience</h1>
+
+    <p class="experience-summary">
+        Senior Application Developer specializing in .NET, Blazor, enterprise workflow automation, and cloud-integrated internal platforms.
+        Experienced delivering secure, scalable solutions across large government organizations supporting operational modernization,
+        process automation, and public-facing systems.
+    </p>
+</div>
 
 <details>
-    <summary class="dropdown"><b>Software Engineer</b><br>LA County Board of Supervisors<br>6/2024 – Present</summary>
+    <summary class="dropdown">
+        <b>Senior Application Developer</b><br>
+        LA County Board of Supervisors<br>
+        <span class="sub">3/2025 – Present</span>
+    </summary>
+
     <div class="dropdown-content">
-        <p>
-            As a Software Engineer - Application Developer II at the LA County Board of Supervisors since June 2024, I focus on enhancing operational efficiency through the development of robust applications and systems. I specialize in creating a user-friendly Blazor C# app linked to an MSSQL database, designed to streamline complex backend operations and save developers approximately 10% of their time by enabling business users to perform quick updates. My work involves leveraging the Microsoft suite to build low-code SharePoint pages, PowerApps solutions, and PowerAutomate flows. I also manage content with Kontent.ai's headless CMS and use Git Actions for seamless CI/CD, testing, deployment, and version control on the Vue.js side. Notably, I developed an offline version of a headless Vue.js website through a custom event handler library to ensure continuous access. Additionally, I resolve around 25 Dynamics 365 and CRM-related tickets weekly to maintain smooth business operations. I am also spearheading AI research and development by creating proof-of-concept applications using the OpenAI Assistants API for various use cases.
-        </p>
+        <ul>
+            <li>
+                Led modernization of the Assessment Appeals Board’s eForms ecosystem using Blazor and enterprise service integrations,
+                reducing hearing processing time by 60% through workflow automation and system consolidation.
+            </li>
+
+            <li>
+                Designed and developed a secure Board Correspondence platform leveraging Box CCG, Entra ID SSO,
+                and custom MSSQL role-based authorization to support cross-departmental document governance and access control.
+            </li>
+
+            <li>
+                Architected and delivered enterprise Power Platform solutions integrated with enterprise ITSM workflows,
+                automating request intake and approval routing across 30+ Board of Supervisors divisions.
+            </li>
+
+            <li>
+                Engineered a .NET SendGrid notification microservice to automate cross-county transactional communications.
+            </li>
+        </ul>
     </div>
 </details>
 
 <details>
-    <summary class="dropdown"><b>IT Analyst</b><br>LA County Board of Supervisors<br>4/2024 – 6/2024</summary>
+    <summary class="dropdown">
+        <b>Application Developer II</b><br>
+        LA County Board of Supervisors<br>
+        <span class="sub">6/2024 – 3/2025</span>
+    </summary>
+
     <div class="dropdown-content">
-        <p>
-            As an IT Technical Support Analyst I at LA County Executive Office - Board of Supervisors from April 2024 to June 2024, I've demonstrated adeptness in various technologies including FootPrints, MS 365, PowerApps, Active Directory, PowerShell, Kanban, and Bash. I've utilized FootPrints for efficient ticket tracking and resolution, collaborated with cross-functional teams for seamless operations. Leveraging Active Directory and InTune, I've ensured system compliance and debugging. Moreover, I've automated 50% of routine tasks through the development of batch scripts for device imaging and deployment.
-        </p>
+        <ul>
+            <li>
+                Modernized Board Meeting software supporting weekly public meetings serving Los Angeles County’s 10M+ residents
+                by engineering modern .NET/SQL based solutions to reduce legacy code dependencies by 50%.
+            </li>
+
+            <li>
+                Managed CI/CD pipelines and version control workflows for Vue.js applications integrated with Kontent.ai CMS.
+            </li>
+
+            <li>
+                Spearheaded migration of legacy webhook infrastructure ahead of vendor deprecation timelines,
+                coordinating testing and rollout efforts to ensure uninterrupted integrations and zero critical service disruptions during transition.
+            </li>
+
+            <li>
+                Led development of a Blazor and MSSQL self-service platform enabling internal teams to manage operational data updates independently,
+                reducing developer support workload by approximately 15%.
+            </li>
+
+            <li>
+                Prototyped AI-driven workflow automation tools for executive operations using the OpenAI Assistants API.
+            </li>
+        </ul>
     </div>
 </details>
 
 <details>
-    <summary class="dropdown"><b>Multimedia Technology Lead</b><br>Glendale Unified School District<br>9/2022 - 4/2024</summary>
+    <summary class="dropdown">
+        <b>IT Analyst I</b><br>
+        LA County Board of Supervisors<br>
+        <span class="sub">4/2024 – 6/2024</span>
+    </summary>
+
     <div class="dropdown-content">
-        <p>
-            During my tenure as a Multimedia Technology Lead at Glendale Unified School District from September 2022 to April 2024, I've adeptly managed a diverse array of technologies, including Google Workspace, SolarWinds, Active Directory, PowerShell, Bash, LEMP stack, PHP, and T-SQL. One of my notable achievements was the successful migration of on-prem resources to Google Cloud, facilitating seamless access and significantly reducing annual costs by over $10,000. To boost productivity, I automated workflows using JavaScript and CronJobs, resulting in a 50% increase in productivity with over 35 tickets resolved weekly. I developed reusable web-based documentation in PHP/SQL, providing comprehensive guidance to staff on technical procedures and security protocols. Leveraging T-SQL based information systems, I analyzed data for reports and generated valuable insights using pivot tables. Additionally, I actively collaborated with cross-functional teams in standup meetings to address evolving cybersecurity needs and ensured the setup of IDS, vulnerability scans, pentests, and security assessments in liaison with network engineers. Furthermore, I configured Mobile Device Management (MDM) for mobile devices and Group Policies (GP) in Active Directory, prioritizing Least Privilege principles for enhanced security.
-        </p>
+        <ul>
+            <li>
+                Resolved enterprise technical issues through FootPrints in collaboration with Application Development,
+                Cloud Operations, and Infrastructure teams.
+            </li>
+
+            <li>
+                Managed endpoint compliance and device deployments using Active Directory and Microsoft Intune.
+            </li>
+
+            <li>
+                Automated device imaging and provisioning with batch scripting to improve deployment efficiency.
+            </li>
+        </ul>
+    </div>
+</details>
+
+<details>
+    <summary class="dropdown">
+        <b>Multimedia Technology Lead</b><br>
+        Glendale Unified School District<br>
+        <span class="sub">9/2022 – 4/2024</span>
+    </summary>
+
+    <div class="dropdown-content">
+        <ul>
+            <li>
+                Built a cloud-based media distribution solution using Google Cloud Storage by digitizing educational DVD content,
+                reducing annual licensing costs by $1K+ while improving accessibility across district classrooms.
+            </li>
+        </ul>
     </div>
 </details>
 
 <h1>Freelance Work</h1>
 
 <details>
-    <summary class="dropdown"><b>Full Stack Developer</b><br>Don’t Trip<br>5/2020 - 2/2023</summary>
+    <summary class="dropdown">
+        <b>Full Stack Developer</b><br>
+        Don’t Trip<br>
+        <span class="sub">5/2020 – 2/2023</span>
+    </summary>
+
     <div class="dropdown-content">
-        <p>
-            During my tenure as a Full Stack Developer at Don’t Trip from May 2020 to February 2023, I led a team in creating a landmark discovery platform, integrating various APIs to provide personalized travel plans. Noteworthy achievements include the integration of industry-grade security measures, third-party login providers, and significant improvements in UI/UX design resulting in increased user engagement. Additionally, I managed Agile development practices using Git, Jira, Docker, and Swagger while automating server updates, maintenance, and deployment using Ansible playbooks.
-        </p>
+        <ul>
+            <li>
+                Built and maintained a production full-stack travel platform using PHP, JavaScript, MySQL,
+                and Google Maps APIs, serving 1,500+ users with personalized route recommendation features.
+            </li>
+
+            <li>
+                Engineered secure authentication and API protection mechanisms including JWT authentication,
+                2FA, CSRF/XSS mitigation, rate limiting, and SQL injection prevention.
+            </li>
+
+            <li>
+                Managed containerization, deployment, and infrastructure using Docker, Git, Ansible,
+                Swagger/OpenAPI, and Linux-based LEMP environments.
+            </li>
+        </ul>
     </div>
 </details>
 
 <details>
-    <summary class="dropdown"><b>Jr. Database Admin</b><br>KB Nursery<br>5/2018 – 11/2020</summary>
+    <summary class="dropdown">
+        <b>Jr. Database Admin</b><br>
+        KB Nursery<br>
+        <span class="sub">5/2018 – 11/2020</span>
+    </summary>
+
     <div class="dropdown-content">
-        <p>
-            As a Junior Database Administrator at the Kittle Bottle Nursery kitten resuce startup from May 2018 to November 2020, I managed the RDBMS infrastructure, optimizing performance efficiency and ensuring continuous availability through backup, recovery, and replication strategies. I provided steadfast support and training documentation to staff while utilizing monitoring tools like Datadog to ensure database health and stability.
-        </p>
+        <ul>
+            <li>
+                Managed RDBMS infrastructure, optimizing performance efficiency and ensuring continuous availability
+                through backup, recovery, and replication strategies.
+            </li>
+
+            <li>
+                Provided technical support and training documentation while utilizing monitoring tools like Datadog
+                to maintain database health and stability.
+            </li>
+        </ul>
     </div>
 </details>
 
 <details>
-    <summary class="dropdown"><b>Personal Projects</b></summary>
+    <summary class="dropdown">
+        <b>Personal Projects</b>
+    </summary>
+
     <div class="dropdown-content">
-        <p>
-            I am currently working on several personal projects, including the IoT Environment Analysis API, a REST API designed for data analysis. This API is thoroughly tested with J-Unit and documented using Swagger. It receives JSON payloads from ESP32 MCUs, which are deserialized and stored in a MySQL database. To optimize performance, I have implemented schema normalization, Redis for caching, and pagination, resulting in a reduction of API response latency by approximately 50 ms per 100 KB response size.
-        </p>
-        <p>
-            In addition to this, I am also involved in developing automation software for my in-home servers, crafting cloud-based music streaming microservices to supplement Don't Trip, writing custom firmware and interfaces for TTL-based DRAM chips, and implementing experimental database replication strategies.
-        </p>
+        <ul>
+            <li>
+                Currently developing the IoT Environment Analysis API, a REST API for data analysis documented with Swagger
+                and tested using J-Unit. The platform receives JSON payloads from ESP32 MCUs, stores them in MySQL,
+                and leverages Redis caching, schema normalization, and pagination to reduce API response latency
+                by approximately 50 ms per 100 KB response size.
+            </li>
+
+            <li>
+                Additional projects include cloud-based music streaming microservices,
+                in-home server automation software, custom firmware and interfaces for TTL-based DRAM chips,
+                and experimental database replication strategies.
+            </li>
+        </ul>
     </div>
 </details>
 `;

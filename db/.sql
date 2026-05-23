@@ -16,6 +16,12 @@ CREATE TABLE rate_limit (
     PRIMARY KEY (id)
 );
 
+CREATE TABLE blocklist (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  domain varchar(255) NOT NULL,
+  PRIMARY KEY (id)
+);
+
 CREATE TABLE messages (
     id INT(11) NOT NULL AUTO_INCREMENT,
     name VARCHAR(255) DEFAULT NULL,

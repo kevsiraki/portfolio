@@ -38,7 +38,7 @@ textarea {
 
 @media screen and (max-width: 1200px) {
     #container {
-        width: 82vw;
+        width: 95vw;
     }
 }
 

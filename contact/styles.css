@@ -73,6 +73,10 @@ body {
     background: linear-gradient(to bottom, #007AFF, #00A6FF);
 }
 
+.fa-book {
+    background: linear-gradient(to bottom, #0C4E8A, #3B8CC5);
+}
+
 .fa-address-card {
     background: linear-gradient(to right, #FF7385, #3374C4, #FFB44D);
 }
@@ -81,7 +85,7 @@ body {
     background: linear-gradient(to right, #4285F4, #0F9D58, #F4B400, #DB4437);
 }
 
-.fa-github, .fa-server, .fa-mountain, .fa-envelope, .fa-address-card, .fa-location-pin, .fa-wordpress {
+.fa-github, .fa-server, .fa-mountain, .fa-envelope, .fa-address-card, .fa-location-pin, .fa-wordpress, .fa-book {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

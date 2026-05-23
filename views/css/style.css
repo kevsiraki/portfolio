@@ -1,4 +1,9 @@
 /* Global styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 /* Body/HTML styles */
 body, html {
@@ -81,4 +86,11 @@ a:active {
 /* Heading styles */
 h1 {
 	color: rgba(0, 0, 0, .75);
+}
+
+/* ul styles */
+ul {
+    padding: 0;
+    text-align: center;
+    margin: auto;
 }

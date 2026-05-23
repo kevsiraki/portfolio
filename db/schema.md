@@ -18,6 +18,14 @@
 | ip                | varchar(255) | NO   |     | NULL    |                |
 | last_request_time | int(11)      | YES  |     | 0       |                |
 
+### Table: blocklist
+
++--------+--------------+------+-----+---------+----------------+
+| Field  | Type         | Null | Key | Default | Extra          |
++--------+--------------+------+-----+---------+----------------+
+| id     | int(11)      | NO   | PRI | NULL    | auto_increment |
+| domain | varchar(255) | NO   |     | NULL    |                |
+
 ### Table: messages
 
 | Field   | Type          | Null | Key | Default | Extra          |

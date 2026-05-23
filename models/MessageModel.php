@@ -28,7 +28,7 @@ class MessageModel
         $this->email = isset($data->email) ? $data->email : '';
         $this->message = isset($data->message) ? $data->message : '';
 
-        return !empty($this->name) && !empty($this->email) && $this->isValidEmail() && !empty($this->message);
+        return !empty($this->name) && !empty($this->email) && $this->isValidEmail() && !$this->isBlocked($this->email) && !empty($this->message);
     }
 
     /**
@@ -97,6 +97,34 @@ class MessageModel
     }
 
     /**
+     * See if the email's domain is in the blocklist.
+     * 
+     * @param string $email The email.
+     * 
+     * @return bool True if it is in the blocklist, false otherwise.
+     */
+    private function isBlocked($email)
+    {
+        $parts = explode('@', $email, 2);
+        if (count($parts) < 2) {
+            return false;
+        }
+        $domain = $parts[1];
+
+        $sql = "SELECT domain FROM blocklist WHERE domain = ?";
+        $stmt = $this->link->prepare($sql);
+        $stmt->bind_param("s", $domain);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows > 0) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * Sanitize and filter the input data.
      *
      * @param string $input The input string to sanitize and filter.
@@ -120,6 +148,8 @@ class MessageModel
      */
     public function getLastRequestTime($ip)
     {
+        $lastRequestTime = null;
+
         $sql = "SELECT last_request_time FROM rate_limit WHERE ip = ?";
         $stmt = $this->link->prepare($sql);
         $stmt->bind_param("s", $ip);

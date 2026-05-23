@@ -17,13 +17,6 @@ export const skillsStyles = `
     font-size: 20px;
 }
 
-ul {
-    padding: 0;
-    text-align: center;
-    max-width: 1000px;
-    margin: auto;
-}
-
 .skill-set li {
     background: rgba(17, 84, 204, .15);
     border-radius: 35px;
@@ -44,6 +37,5 @@ ul {
 .skill-set li:not(.hover-item) {
     cursor: default;
 }
-
-
+    
 `;
